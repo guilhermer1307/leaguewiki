@@ -4,14 +4,16 @@ import dictlol as d
 def open_details(name, index):
 	detail = Tk()
 	detail.title(name)
+	detail.resizable(False, False)
 
-	filebg = PhotoImage(file = "paper.png")
-	w = filebg.width()
-	h = filebg.height()
+	filebg_det = PhotoImage(file = "paper.png")
+	w_det = filebg_det.width()
+	h_det = filebg_det.height()
 
-	detail.geometry("%dx%d+50+30" % (w,h)) #JANELA
+	detail.geometry("%dx%d+50+30" % (w_det,h_det)) #JANELA
 
-	canvas = Canvas(height = h, width = w)
-	canvas.pack(side='top', fill='both', expand='yes')
-	canvas.create_image(0, 0, image=filebg, anchor='nw')
+	canvas_det = Canvas(height = h_det, width = w_det)
+	canvas_det.pack(side='top', fill='both', expand='yes')
+	canvas_det.create_image(0, 0, image=filebg_det, anchor='nw')
+
 	detail.mainloop()
