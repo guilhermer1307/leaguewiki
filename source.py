@@ -6,6 +6,7 @@ def open_details(name, index):
 	detail = Tk()
 	detail.title(name)
 	detail.resizable(False, False)
+	detail.iconbitmap(d.champico[index])
 
 	filebg_det = PhotoImage(file = r'detback.png')
 	w_det = filebg_det.width()
