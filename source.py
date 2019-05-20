@@ -6,12 +6,12 @@ def open_details(name, index):
 	detail.title(name)
 
 	filebg = PhotoImage(file = "paper.png")
-    w = filebg.width()
-    h = filebg.height()
-    root.geometry("%dx%d+50+30" % (w,h)) #JANELA
+	w = filebg.width()
+	h = filebg.height()
+
+	detail.geometry("%dx%d+50+30" % (w,h)) #JANELA
 
 	canvas = Canvas(height = h, width = w)
 	canvas.pack(side='top', fill='both', expand='yes')
 	canvas.create_image(0, 0, image=filebg, anchor='nw')
-
 	detail.mainloop()
