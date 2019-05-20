@@ -1,12 +1,13 @@
 from tkinter import *
 import dictlol as d
 
+
 def open_details(name, index):
 	detail = Tk()
 	detail.title(name)
 	detail.resizable(False, False)
 
-	filebg_det = PhotoImage(file = "paper.png")
+	filebg_det = PhotoImage(file = r'detback.png')
 	w_det = filebg_det.width()
 	h_det = filebg_det.height()
 
