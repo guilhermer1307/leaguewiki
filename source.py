@@ -8,14 +8,14 @@ def open_details(name, index):
 	detail.resizable(False, False)
 	detail.iconbitmap(d.champico[index])
 
-	filebg_det = PhotoImage(file = r'detback.png')
-	w_det = filebg_det.width()
-	h_det = filebg_det.height()
+	filebg = PhotoImage(file = 'detback.png')
+	w = filebg.width()
+	h = filebg.height()
 
-	detail.geometry("%dx%d+50+30" % (w_det,h_det)) #JANELA
+	detail.geometry("%dx%d+50+30" % (w,h)) #JANELA
 
-	canvas_det = Canvas(height = h_det, width = w_det)
-	canvas_det.pack(side='top', fill='both', expand='yes')
-	canvas_det.create_image(0, 0, image=filebg_det, anchor='nw')
+	canvas = Canvas(height = h, width = w)
+	canvas.pack(side='top', fill='both', expand='yes')
+	canvas.create_image(0, 0, image=filebg, anchor='nw')
 
 	detail.mainloop()
