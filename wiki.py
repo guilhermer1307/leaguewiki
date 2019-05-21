@@ -70,6 +70,7 @@ try:
 except:
        print('Erro ao desenhar os botões na tela')
 
+print(s.split_lore(d.champlore[0]))
 
 ##MAIN
 root.mainloop()

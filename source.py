@@ -1,6 +1,16 @@
 from tkinter import *
 import dictlol as d
 
+
+def split_lore(lore):
+	x = 40
+	slore = ''
+	string = [lore[y-x:y] for y in range(x, len(lore)+x,x)]
+
+	for x in range(len(string)):
+		slore = slore + str(string[x]) + '\n'
+	return slore
+
 def open_details(name, index):
 	detail = Tk()
 	detail.title(name)
@@ -20,5 +30,9 @@ def open_details(name, index):
 
 	canvas.create_text(170, 35, fill="white", font="arial 25 bold", text=name)
 	canvas.create_image(30, 60, image=art, anchor='nw')
+
+	lore = Text(canvas)
+	lore.insert(INSERT, d.champlore[0])
+	lore.pack()
 
 	detail.mainloop()
