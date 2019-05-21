@@ -1,7 +1,6 @@
 from tkinter import *
 import dictlol as d
 
-
 def split_lore(lore):
 	x = 60
 	slore = ''
@@ -28,9 +27,15 @@ def open_details(name, index):
 	canvas.pack(side='top', fill='both', expand='yes')
 	canvas.create_image(0, 0, image=filebg, anchor='nw')
 
+	if len(d.champdesc[index]) > 70:
+		desc = ''
+	else:
+		desc = d.champdesc[index]
+
 	canvas.create_text(170, 25, fill="white", font="times 25 bold", text=name)
-	canvas.create_text(500, 53, fill="white", font="times 15 bold", text=d.champdesc[index])
+	canvas.create_text(700, 53, fill="white", font="times 15 bold", text=desc, justify = RIGHT)
 	canvas.create_image(30, 70, image=art, anchor='nw')
+
 
 	lore = split_lore(d.champlore[index])
 
