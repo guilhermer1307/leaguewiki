@@ -17,5 +17,5 @@ def open_details(name, index):
 	canvas.pack(side='top', fill='both', expand='yes')
 	canvas.create_image(0, 0, image=filebg, anchor='nw')
 
-	canvas.create_text(50, 50, fill="black", font="arial 30", text=name)
+	canvas.create_text(750, 75, fill="black", font="arial 25", text=name)
 	detail.mainloop()
