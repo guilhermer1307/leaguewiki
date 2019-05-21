@@ -11,6 +11,7 @@ cpimg = []
 root = Tk()
 root.title('League Wiki')
 root.resizable(False, False)
+root.iconbitmap("main.ico")
 
 ##FUNDO 
 filebg = PhotoImage(file = "background1.png")
