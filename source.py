@@ -8,6 +8,7 @@ def open_details(name, index):
 	detail.iconbitmap(d.champico[index])
 
 	filebg = PhotoImage(file = 'paper.png', master = detail)
+	art = PhotoImage(file = d.champart[0], master = detail)
 	w = filebg.width()
 	h = filebg.height()
 
@@ -17,5 +18,7 @@ def open_details(name, index):
 	canvas.pack(side='top', fill='both', expand='yes')
 	canvas.create_image(0, 0, image=filebg, anchor='nw')
 
-	canvas.create_text(750, 75, fill="black", font="arial 25", text=name)
+	canvas.create_text(150, 55, fill="black", font="arial 25", text=name)
+	canvas.create_image(30, 70, image=art, anchor='nw')
+
 	detail.mainloop()

@@ -72,3 +72,6 @@ champico = {0:"champions_icons/Anivia.ico",
               21:"champions_icons/Veigar.ico",
               22:"champions_icons/Jax.ico",
 }
+
+champart = {0:"champions_art/Shen.png",
+}
