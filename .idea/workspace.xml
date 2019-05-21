@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f161e9-8496-4530-8670-fcb3fbf53719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/leaguewiki.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Aatrox.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Ahri.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Akali.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Anivia.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Brand.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Ezreal.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Fiora.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Fizz.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Jax.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Jinx.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Kalista.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Karthus.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Katarina.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Kennen.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Renekton.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Riven.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Rumble.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Ryze.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Shen.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Vayne.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Veigar.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Yasuo.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/champs_icons/Zed.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictlol.py" beforeDir="false" afterPath="$PROJECT_DIR$/dictlol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wiki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="112">
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -52,10 +25,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dictlol.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+            <state relative-caret-position="1650">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -82,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -92,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,7 +89,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,7 +173,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wiki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="112">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -197,8 +183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dictlol.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+        <state relative-caret-position="1650">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
