@@ -13,53 +13,62 @@ root.title('League Wiki')
 root.resizable(False, False)
 root.iconbitmap("main.ico")
 
-##FUNDO 
-filebg = PhotoImage(file = "background1.png")
-w = filebg.width()
-h = filebg.height()
-root.geometry("%dx%d+50+30" % (w,h)) #JANELA
+##FUNDO
+try:
+       filebg = PhotoImage(file = "background1.png")
+       w = filebg.width()
+       h = filebg.height()
+       root.geometry("%dx%d+50+30" % (w,h)) #JANELA
 
-canvas = Canvas(height = h, width = w)
-canvas.pack(side='top', fill='both', expand='yes')
-canvas.create_image(0, 0, image=filebg, anchor='nw')
+       canvas = Canvas(height = h, width = w)
+       canvas.pack(side='top', fill='both', expand='yes')
+       canvas.create_image(0, 0, image=filebg, anchor='nw')
+except:
+       print('Erro ao desenhar o background')
 
 
 
 ##ARRAY IMAGENS
-for x in range(len(d.champimage)):
-       imgtemp = PhotoImage(file = d.champimage[x])
-       cpimg.append(imgtemp)
+try:
+       for x in range(len(d.champname)):
+              imgtemp = PhotoImage(file = "champions/"+d.champname[x]+".png")
+              cpimg.append(imgtemp)
+except:
+       print('Erro ao armazenar as imagens dos champions')  
 
 ##DRAW BUTTONS
-for x in range(7):
-       bt = Button(canvas, image = cpimg[x], width = 118, height = 118, bd = 0, highlightthicknes=0)
-       bt["command"] = partial(s.open_details, d.champname[x], x)
-       bt.grid(row = 0, column = x, padx=13, pady=18)
+try:
+       for x in range(7):
+              bt = Button(canvas, image = cpimg[x], width = 118, height = 118, bd = 0, highlightthicknes=0)
+              bt["command"] = partial(s.open_details, d.champname[x], x)
+              bt.grid(row = 0, column = x, padx=13, pady=18)
 
-for x in range(4):
-       if x < 2:
-              bt = Button(canvas, image = cpimg[x+7], width = 118, height = 118, bd = 0, highlightthicknes=0)
-              bt["command"] = partial(s.open_details, d.champname[x+7], x+7)
-              bt.grid(row = 1, column = x, padx=13, pady=10)
-       else:
-              bt = Button(canvas, image = cpimg[x+7], width = 118, height = 118, bd = 0, highlightthicknes=0)
-              bt["command"] = partial(s.open_details, d.champname[x+7], x+7)
-              bt.grid(row = 1, column = x+3, padx=13, pady=10)
+       for x in range(4):
+              if x < 2:
+                     bt = Button(canvas, image = cpimg[x+7], width = 118, height = 118, bd = 0, highlightthicknes=0)
+                     bt["command"] = partial(s.open_details, d.champname[x+7], x+7)
+                     bt.grid(row = 1, column = x, padx=13, pady=10)
+              else:
+                     bt = Button(canvas, image = cpimg[x+7], width = 118, height = 118, bd = 0, highlightthicknes=0)
+                     bt["command"] = partial(s.open_details, d.champname[x+7], x+7)
+                     bt.grid(row = 1, column = x+3, padx=13, pady=10)
 
-for x in range(4):
-       if x < 2:
-              bt = Button(canvas, image = cpimg[x+11], width = 118, height = 118, bd = 0, highlightthicknes=0)
-              bt["command"] = partial(s.open_details, d.champname[x+11], x+11)
-              bt.grid(row = 2, column = x, padx=13, pady=10)
-       else:
-              bt = Button(canvas, image = cpimg[x+11], width = 118, height = 118, bd = 0, highlightthicknes=0)
-              bt["command"] = partial(s.open_details, d.champname[x+11], x+11)
-              bt.grid(row = 2, column = x+3, padx=13, pady=10)
+       for x in range(4):
+              if x < 2:
+                     bt = Button(canvas, image = cpimg[x+11], width = 118, height = 118, bd = 0, highlightthicknes=0)
+                     bt["command"] = partial(s.open_details, d.champname[x+11], x+11)
+                     bt.grid(row = 2, column = x, padx=13, pady=10)
+              else:
+                     bt = Button(canvas, image = cpimg[x+11], width = 118, height = 118, bd = 0, highlightthicknes=0)
+                     bt["command"] = partial(s.open_details, d.champname[x+11], x+11)
+                     bt.grid(row = 2, column = x+3, padx=13, pady=10)
 
-for x in range(7):
-       bt = Button(canvas, image = cpimg[x+15], width = 118, height = 118, bd = 0, highlightthicknes=0)
-       bt["command"] = partial(s.open_details, d.champname[x+15], x+15)
-       bt.grid(row = 3, column = x, padx=13, pady=10)
+       for x in range(7):
+              bt = Button(canvas, image = cpimg[x+15], width = 118, height = 118, bd = 0, highlightthicknes=0)
+              bt["command"] = partial(s.open_details, d.champname[x+15], x+15)
+              bt.grid(row = 3, column = x, padx=13, pady=10)
+except:
+       print('Erro ao desenhar os botões na tela')
 
 
 ##MAIN

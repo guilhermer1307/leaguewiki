@@ -5,10 +5,10 @@ def open_details(name, index):
 	detail = Tk()
 	detail.title(name)
 	detail.resizable(False, False)
-	detail.iconbitmap(d.champico[index])
+	detail.iconbitmap("champions_icons/"+name+".ico")
 
 	filebg = PhotoImage(file = 'paper.png', master = detail)
-	art = PhotoImage(file = d.champart[index], master = detail)
+	art = PhotoImage(file = "champions_art/"+name+".png", master = detail)
 	w = filebg.width()
 	h = filebg.height()
 
