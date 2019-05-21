@@ -3,7 +3,7 @@ import dictlol as d
 
 
 def split_lore(lore):
-	x = 40
+	x = 60
 	slore = ''
 	string = [lore[y-x:y] for y in range(x, len(lore)+x,x)]
 
@@ -28,11 +28,12 @@ def open_details(name, index):
 	canvas.pack(side='top', fill='both', expand='yes')
 	canvas.create_image(0, 0, image=filebg, anchor='nw')
 
-	canvas.create_text(170, 35, fill="white", font="arial 25 bold", text=name)
-	canvas.create_image(30, 60, image=art, anchor='nw')
+	canvas.create_text(170, 25, fill="white", font="times 25 bold", text=name)
+	canvas.create_text(500, 53, fill="white", font="times 15 bold", text=d.champdesc[index])
+	canvas.create_image(30, 70, image=art, anchor='nw')
 
-	lore = Text(canvas)
-	lore.insert(INSERT, d.champlore[0])
-	lore.pack()
+	lore = split_lore(d.champlore[index])
+
+	canvas.create_text(700, 220, fill="white", font='times 15 bold', text=lore, justify=RIGHT)
 
 	detail.mainloop()
